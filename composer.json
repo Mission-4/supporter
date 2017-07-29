@@ -1,0 +1,23 @@
+{
+    "name": "mission4/supporter",
+    "description": "Laravel Application Error handling",
+    "author": "Sam Podlogar",
+    "license": "MIT",
+    "version": "0.0.1",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Sam Podlogar",
+            "email": "phppirate@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mission4\\Supporter\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "~5.3",
+        "kitetail/zttp": "^0.1",
+    }
+}
