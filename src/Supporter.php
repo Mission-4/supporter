@@ -7,9 +7,9 @@ use Mission4\Supporter\Jobs\SupporterAnomaly;
 
 class Supporter
 {
-    static function handleException($exception, $request, $user)
+    public static function handleException($exception, $request, $user)
     {
-        $baseUrl = 'https://supporter.hidalgo365.com';
+        $baseUrl = env('SUPPORTER_BASE_URL', 'https://supporter.mission-4.com');
         
         $data = [
             'api_key' => env('SUPPORTER_KEY'),
@@ -23,7 +23,7 @@ class Supporter
         ])->post($baseUrl . '/api/track', $data);
     }
 
-    static function send($exception, $request)
+    public static function send($exception, $request)
     {
         dispatch(new SupporterAnomaly($exception, $request));
     }

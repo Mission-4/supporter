@@ -3,7 +3,7 @@
     "description": "Laravel Application Error handling",
     "author": "Sam Podlogar",
     "license": "MIT",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "minimum-stability": "dev",
     "authors": [
         {
